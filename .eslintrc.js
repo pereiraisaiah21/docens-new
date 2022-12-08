@@ -19,5 +19,6 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    "arrow-body-style": "off"
   },
 };
