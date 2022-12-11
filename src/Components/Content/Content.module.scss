@@ -1,17 +1,47 @@
 .c {
     &Wrapper {
+        padding: 16px 48px;
+    }
+    &Content {
+        background-color: #34303c;
         padding: 16px;
+        border-radius: 20px;
     }
     &Title {
         color: #fff;
+        margin: 0;
     }
-    &Carousel {
-        width: 100%;
-        overflow: hidden;
-    }
-    &Item {
-        padding: 32px 16px;
-        border-radius: 20px;
-        background-color: #1a1a1e;
+    &o {
+        &List {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+        &Item {
+            // padding: 32px 16px;
+            width: 24%;
+        }
+        &Anchor {
+            display: flex;
+            align-items: center;
+            background-color: #9000bf2b;
+            border: 1px solid #b502ff;
+            border-radius: 10px;
+            padding: 8px;
+            height: 100%;
+            width: 100%;
+        }
+        &Emoji {
+            padding: 10px;
+            // border-radius: 10px;
+            // background-color: #9400d3;
+            margin-right: 8px;
+            font-size: 1.5rem;
+        }
+        &Name {
+            color: #fff;
+        }
     }
 }

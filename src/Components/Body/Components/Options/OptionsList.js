@@ -6,25 +6,31 @@ function OptionsList () {
     const options = [
         {
             name : "Dashboard",
-            title : "Dashboard"
+            title : "Dashboard",
+            emoji: "🏠"
         },
         {
             name : "Conteúdos",
-            title : "Dashboard"
+            title : "Dashboard",
+            emoji: "🏠"
         },
         {
             name : "Desafios",
-            title : "Dashboard"
+            title : "Dashboard",
+            emoji: "🏠"
         },
     ];
 
     return (
         
         <ul className={style.boList}>
+            <li className={style.boItemDescription}>
+                Ferramentas
+            </li>
             {
                 options.map((item, key) => {
                     return (
-                        <Option href="afsad" name={item.name} title={item.title} />
+                        <Option emoji={item.emoji} href="afsad" name={item.name} title={item.title} />
                     )   
                 })
             }

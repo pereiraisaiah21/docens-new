@@ -1,15 +1,12 @@
 import style from "../../Body.module.scss";
+import Option from "../Options/Option";
 
 function Tools () {
 
     return (
 
         <ul className={style.btList}>
-            <li className={style.boItem}>
-                <a className={style.boAnchor} href="/das">
-                    Tools
-                </a>
-            </li>
+            <Option emoji="⚙" href="afsad" name="Configurações" title="" />
         </ul>
     );
 }
