@@ -1,6 +1,18 @@
+import Header from "../Header/Header";
 
 function Body () {
-    return "";
+
+    return (
+
+        <main className="bMain">
+            <nav className="bNavigation">
+                
+            </nav>
+            <div className="bContent">
+                <Header />
+            </div>
+        </main>
+    );
 }
 
 export default Body;
