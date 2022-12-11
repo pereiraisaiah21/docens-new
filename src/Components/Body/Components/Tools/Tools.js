@@ -6,8 +6,8 @@ function Tools () {
 
         <ul className={style.btList}>
             <li className={style.boItem}>
-                <a className={style.boAnchor}>
-
+                <a className={style.boAnchor} href="/das">
+                    Tools
                 </a>
             </li>
         </ul>

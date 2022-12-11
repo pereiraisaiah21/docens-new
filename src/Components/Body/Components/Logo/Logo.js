@@ -5,10 +5,8 @@ function Logo () {
     return (
 
         <figure className={style.blLogo}>
-            <img alt="" src="" className={style.blImage} />
-            <figcaption className={style.blLabel}>
-                Logo
-            </figcaption>
+            <img alt="" src="/logo.png" className={style.blImage} />
+            <figcaption className={style.blLabel} />
         </figure>
     );
 }

@@ -7,37 +7,43 @@
     }
     &Navigation {
         grid-area: navigation;
-        background-color: #1e1e1e;
+        background-color: #1a1a1e;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-right: 1px solid #ccc;
     }
     &Content {
         grid-area: content;
     }
 
     &l {
-        &Logo {}
-        &Image {}
+        &Logo {
+            padding: 10px;
+        }
+        &Image {
+            max-width: 100%;
+        }
         &Label {}
     }
 
     &o {
         &List {
-            background: red;
-            height: 50%;
             display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
         }
         &Item {
+            display: flex;
+            flex-wrap: wrap;
             width: 100%;
+            height: 32px;
         }
         &Anchor {
             display: flex;
-            height: 48px;
+            height: 100%;
             align-items: center;
-            justify-content: center;
             width: 100%;
+            color: #fff;
         }
     }
 

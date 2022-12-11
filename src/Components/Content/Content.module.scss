@@ -1,0 +1,17 @@
+.c {
+    &Wrapper {
+        padding: 16px;
+    }
+    &Title {
+        color: #fff;
+    }
+    &Carousel {
+        width: 100%;
+        overflow: hidden;
+    }
+    &Item {
+        padding: 32px 16px;
+        border-radius: 20px;
+        background-color: #1a1a1e;
+    }
+}
