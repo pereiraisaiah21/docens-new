@@ -30,7 +30,7 @@ function OptionsList () {
             {
                 options.map((item, key) => {
                     return (
-                        <Option emoji={item.emoji} href="afsad" name={item.name} title={item.title} />
+                        <Option emoji={item.emoji} href="afsad" key={key} name={item.name} title={item.title} />
                     )   
                 })
             }

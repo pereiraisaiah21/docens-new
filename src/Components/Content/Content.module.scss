@@ -44,4 +44,78 @@
             color: #fff;
         }
     }
+
+    &p {
+        &Wrapper {
+            padding: 16px 48px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &Aside {
+            background-color: #34303c;
+            padding: 16px;
+            border-radius: 20px;
+            width: 30%;
+        }
+        &List {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;    
+        }
+        &Item {
+            width: 100%;
+            height: 32px;
+            &Description {
+                color: #fff;
+                font-size: .8rem;
+            }
+        }
+        &Anchor {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+        }
+        &Emoji {
+            padding: 5px;
+            margin-right: 8px;
+            border-radius: 10px;
+            border: 1px solid #b502ff;
+        }
+        &Tutorial {
+            background-color: #34303c;
+            padding: 16px;
+            border-radius: 20px;
+            width: 68%;
+        }
+    }
+
+    &r {
+        &Wrapper {
+            padding: 16px 48px;
+        }
+        &Title {
+            color: #fff;
+        }
+        &List {
+            display: flex;
+        }
+        &Item {
+            width: 20%;
+            background-color: #34303c;
+            margin-right: 16px;
+            border-radius: 10px;
+        }
+        &Anchor {
+            display: flex;
+            padding: 16px;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+        }
+        &Emoji {}
+    }
 }

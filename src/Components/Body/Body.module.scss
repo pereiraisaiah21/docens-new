@@ -7,7 +7,6 @@
     }
     &Navigation {
         grid-area: navigation;
-        // background-color: #1a1a1e;
         border-right: 1px solid #3c3a3a;
         display: flex;
         flex-direction: column;
@@ -18,7 +17,7 @@
 
     &l {
         &Logo {
-            padding: 10px;
+            padding: 24px 16px;
         }
         &Image {
             max-width: 150px;
@@ -52,7 +51,6 @@
             align-items: center;
             width: 100%;
             color: #898989;
-            // background-color: #9400d3;
             border-radius: 10px;
         }
         &Name {}
@@ -69,6 +67,13 @@
             align-items: flex-start;
             padding: 16px;
             gap: 8px;
+            position: relative;
+        }
+        &Spacer {
+            background-color: #3c3a3a;
+            height: 1px;
+            width: 100%;
+            margin: 0 0 16px;
         }
     }
 }
