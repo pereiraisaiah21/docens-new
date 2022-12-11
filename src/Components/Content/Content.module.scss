@@ -11,6 +11,8 @@
         color: #fff;
         margin: 0;
     }
+
+    // Options
     &o {
         &List {
             width: 100%;
@@ -45,6 +47,7 @@
         }
     }
 
+    // Topics
     &p {
         &Wrapper {
             padding: 16px 48px;
@@ -92,6 +95,7 @@
         }
     }
 
+    // Recommendation
     &r {
         &Wrapper {
             padding: 16px 48px;
@@ -117,5 +121,26 @@
             color: #fff;
         }
         &Emoji {}
+    }
+
+    // Subject
+    &s {
+        &Wrapper {
+            padding: 16px 48px;
+        }
+        &Author {
+            color: #fff;
+        }
+        &Emoji {}
+        &Content {
+            color: #fff;
+        }
+        &Title {
+            margin: 16px 0;
+        }
+        &Description {
+            color: #fff;
+            margin: 16px 0;
+        }
     }
 }
