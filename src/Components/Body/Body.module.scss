@@ -1,5 +1,47 @@
 .b {
-    &Main {}
-    &Navigation {}
-    &Content {}
+    &Main {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template: "navigation content" / 1fr 4fr;
+    }
+    &Navigation {
+        grid-area: navigation;
+        background-color: #1e1e1e;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-right: 1px solid #ccc;
+    }
+    &Content {
+        grid-area: content;
+    }
+
+    &l {
+        &Logo {}
+        &Image {}
+        &Label {}
+    }
+
+    &o {
+        &List {
+            background: red;
+            height: 50%;
+            display: flex;
+        }
+        &Item {
+            width: 100%;
+        }
+        &Anchor {
+            display: flex;
+            height: 48px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &t {
+
+    }
 }

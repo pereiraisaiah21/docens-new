@@ -6,10 +6,10 @@ function Header () {
     return (
 
         <header className={sytle.hWrapper}>
-            <div>
+            <div className={sytle.hBreadcrumb}>
                 Dashboard / Home
             </div>
-            <div>
+            <div className={sytle.hUserDropdown}>
                 Name 
             </div>
         </header>
