@@ -4,6 +4,8 @@ import GuideLine from "../Content/Components/Guideline";
 import Progress from "./Components/Progress/Progress";
 import Recommendation from "./Components/Recommendation/Recommendation";
 import Subject from "./Components/Subject/Subject";
+import Login from "../Login/Login";
+import Registration from "../Login/Registration";
 
 function Content () {
 
@@ -18,6 +20,8 @@ function Content () {
 
             {/* // Another section */}
             <Subject />
+            <Login />
+            <Registration />
         </section>
     );
 }

@@ -7,7 +7,6 @@ import style from "./Body.module.scss";
 import Content from "../Content/Content";
 import Navigation from "./Components/Navigation/Navigation";
 
-
 function Body () {
 
     return (
