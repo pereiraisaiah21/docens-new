@@ -1,0 +1,11 @@
+.b {
+    &CloseNav {
+        border-radius: 10px;
+        width: min-content;
+        background-color: #3c3a3a;
+        position: absolute;
+        padding: 8px;
+        right: 16px;
+        top: 16px;
+    }
+}

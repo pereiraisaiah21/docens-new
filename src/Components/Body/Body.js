@@ -1,20 +1,18 @@
-
-import Header from "../Header/Header";
-import Logo from "./Components/Logo/Logo";
-import OptionsList from "./Components/Options/OptionsList";
-import Tools from "./Components/Tools/Tools";
+import React, { useState } from "react";
 import style from "./Body.module.scss";
 import Content from "../Content/Content";
 import Navigation from "./Components/Navigation/Navigation";
 
 function Body () {
 
+    const [ sectionOpen, setSectionOpen ] = useState( "" );
+
     return (
 
         <main className={style.bMain}>
-            <Navigation />
+            <Navigation setState={setSectionOpen} />
             <div className={style.bContent}>
-                <Content />
+                <Content sectionOpen={sectionOpen} />
             </div>
         </main>
     );

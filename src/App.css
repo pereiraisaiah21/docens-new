@@ -1,3 +1,8 @@
+#root {
+  height: 100%;
+  width: 100vw;
+}
+
 .App {
   height: 100%;
   width: 100vw;
@@ -28,4 +33,8 @@ a {
 figure {
   margin: 0;
   padding: 0;
+}
+
+.open {
+  display: block !important;
 }

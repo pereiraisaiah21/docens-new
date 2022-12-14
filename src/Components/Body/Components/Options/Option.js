@@ -5,13 +5,19 @@ function Option ({
     href,
     title,
     name,
-    emoji
+    emoji,
+    setState
 }) {
+
+    const handleOptionClick = function (event) {
+        event.preventDefault();
+        setState(event.target.closest("a").getAttribute("href"));
+    };
 
     return (
 
         <li className={style.boItem}>
-            <a className={style.boAnchor} href={`/${href}`} title={title}>
+            <a className={style.boAnchor} href={`${href}`} title={title} onClick={handleOptionClick}>
                 <Emoji className={style.boEmoji} symbol={emoji} label={title} />
                 <span className={style.boName}>
                     {name}

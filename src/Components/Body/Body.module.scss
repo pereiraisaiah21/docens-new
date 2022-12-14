@@ -10,6 +10,7 @@
         border-right: 1px solid #3c3a3a;
         display: flex;
         flex-direction: column;
+        position: relative;
     }
     &Content {
         grid-area: content;
@@ -55,8 +56,10 @@
         }
         &Name {}
         &Emoji {
-            border-radius: 10px;
+            border-radius: 50%;
             padding: 5px;
+            background-color: #3c3a3a;
+            margin-right: 8px;
         }
     }
 

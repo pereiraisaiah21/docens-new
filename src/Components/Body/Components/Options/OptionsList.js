@@ -1,23 +1,28 @@
 import style from "../../Body.module.scss";
 import Option from "./Option";
 
-function OptionsList () {
+function OptionsList ({
+    setState
+}) {
 
     const options = [
         {
-            name : "Dashboard",
-            title : "Dashboard",
-            emoji: "🏠"
+            name: "Dashboard",
+            title: "Dashboard",
+            emoji: "🏠",
+            trigger: "das"
         },
         {
-            name : "Conteúdos",
-            title : "Dashboard",
-            emoji: "🏠"
+            name: "Conteúdos",
+            title: "Content",
+            emoji: "📚",
+            trigger: "con"
         },
         {
-            name : "Desafios",
-            title : "Dashboard",
-            emoji: "🏠"
+            name: "Desafios",
+            title: "Challenge",
+            emoji: "🧺",
+            trigger: "cha"
         },
     ];
 
@@ -30,7 +35,7 @@ function OptionsList () {
             {
                 options.map((item, key) => {
                     return (
-                        <Option emoji={item.emoji} href="afsad" key={key} name={item.name} title={item.title} />
+                        <Option emoji={item.emoji} href={item.trigger} key={key} name={item.name} title={item.title} setState={setState} />
                     )   
                 })
             }
