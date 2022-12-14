@@ -1,4 +1,5 @@
 import React from "react";
+import Emoji from 'a11y-react-emoji';
 import sytle from "./Header.module.scss";
 
 function Header () {
@@ -10,7 +11,10 @@ function Header () {
                 Dashboard / Home
             </div>
             <div className={sytle.hUserDropdown}>
-                Name 
+                <span>
+                    <Emoji className={sytle.hEmoji} symbol={"👤"} label="user" />
+                </span> 
+                Capitain Kirk
             </div>
         </header>
     );

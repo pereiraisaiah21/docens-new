@@ -14,5 +14,13 @@
     &UserDropdown {
         width: 20%;
         color: #fff;
+        border-radius: 20px;
+        padding: 8px 16px 10px;
+        background-color: #3c3a3a;
+    }
+    &Emoji {
+        border-radius: 10px;
+        width: min-content;
+        margin-right: 8px;
     }
 }
