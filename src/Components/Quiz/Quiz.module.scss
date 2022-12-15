@@ -1,0 +1,44 @@
+.q {
+    &Wrapper {
+        padding: 16px 48px;
+    }
+    &Content {
+        background-color: #34303c;
+        padding: 16px 16px 8px;
+        border-radius: 20px;
+    }
+    &Form {}
+    &Header {}
+    &Title {
+        color: #fff;
+    }
+    &Description {
+        color: #fff;
+        padding: 16px 0 8px;
+    }
+    &Alternatives {
+        padding: 0 0 8px;
+    }
+    &Alternatives {
+        &Item {
+        }
+        &Label {
+            width: 100%;
+            display: block;
+            padding: 8px 0;
+            color: #fff;
+        }
+    }
+    &Send {
+        // width: 100%;
+        background-color: unset;
+        border: 0;
+        padding: 8px 0;
+        //text-align: right;
+        color: #fff;
+        cursor: pointer;
+        &Emoji {
+            font-size: .9rem;
+        }
+    }
+}

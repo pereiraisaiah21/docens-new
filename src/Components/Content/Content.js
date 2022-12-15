@@ -9,6 +9,7 @@ import Login from "../Login/Login";
 import Registration from "../Login/Registration";
 
 import style from "./Content.module.scss";
+import Quiz from "../Quiz/Quiz";
 
 function Content ({
     sectionOpen
@@ -29,6 +30,7 @@ function Content ({
         <section>
             <Header />
             <section className={style.cSection} data-open="das">
+                <Quiz />
                 <ActionsList />
                 <GuideLine />
                 <Progress />
