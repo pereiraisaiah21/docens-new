@@ -138,7 +138,13 @@ function Matter () {
                 </ul>
             </div>
             <div className={style.cmContent}>
-                <Subject />
+                {
+                    options
+                    ?
+                    <Subject subjectName={setState} />
+                    :
+                    null
+                }
             </div>
         </section>
     );

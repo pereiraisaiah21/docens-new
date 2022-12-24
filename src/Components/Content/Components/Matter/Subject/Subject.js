@@ -1,15 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Emoji from 'a11y-react-emoji';
 import style from "../../../Content.module.scss";
 
-function Subject () {
+function Subject ({
+    subjectName
+}) {
 
     return (
 
         <section className={style.csWrapper}>
             <div className={style.csContent}>
                 <h1 className={style.csTitle}>
-                    Titulo artigo
+                    Titulo artigo { subjectName}
                 </h1>
                 <div className={style.csAuthor}>  
                     <Emoji className={style.csEmoji} symbol="👤" label="alien monster" />
@@ -26,6 +29,13 @@ function Subject () {
             </div>
         </section>
     );
+}
+
+Subject.defaultProps = {
+    subjectName: "",
+}
+Subject.propTypes = {
+    subjectName : PropTypes.string,
 }
 
 export default Subject;
