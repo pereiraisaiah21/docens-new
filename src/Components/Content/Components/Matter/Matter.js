@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../../Content.module.scss";
 import Option from "./Options/Option";
+import Subject from "./Subject/Subject";
 
 function Matter () {
 
+    const [ setState, setSetState ] = useState( null );
 
     const options = [
         {
@@ -24,8 +26,99 @@ function Matter () {
             emoji: "🧺",
             trigger: "cha"
         },
+        {
+            name: "Trigger",
+            title: "Challenge",
+            emoji: "🏠",
+            trigger: "cha"
+        },
+        {
+            name: "Conteúdos",
+            title: "Content",
+            emoji: "📚",
+            trigger: "con"
+        },
+        {
+            name: "Desafios",
+            title: "Challenge",
+            emoji: "🧺",
+            trigger: "cha"
+        },
+        {
+            name: "Trigger",
+            title: "Challenge",
+            emoji: "🏠",
+            trigger: "cha"
+        },
+        {
+            name: "Conteúdos",
+            title: "Content",
+            emoji: "📚",
+            trigger: "con"
+        },
+        {
+            name: "Desafios",
+            title: "Challenge",
+            emoji: "🧺",
+            trigger: "cha"
+        },
+        {
+            name: "Trigger",
+            title: "Challenge",
+            emoji: "🏠",
+            trigger: "cha"
+        },
+        {
+            name: "Conteúdos",
+            title: "Content",
+            emoji: "📚",
+            trigger: "con"
+        },
+        {
+            name: "Desafios",
+            title: "Challenge",
+            emoji: "🧺",
+            trigger: "cha"
+        },
+        {
+            name: "Trigger",
+            title: "Challenge",
+            emoji: "🏠",
+            trigger: "cha"
+        },
+        {
+            name: "Conteúdos",
+            title: "Content",
+            emoji: "📚",
+            trigger: "con"
+        },
+        {
+            name: "Desafios",
+            title: "Challenge",
+            emoji: "🧺",
+            trigger: "cha"
+        },
+        {
+            name: "Trigger",
+            title: "Challenge",
+            emoji: "🏠",
+            trigger: "cha"
+        },
+        {
+            name: "Conteúdos",
+            title: "Content",
+            emoji: "📚",
+            trigger: "con"
+        },
+        {
+            name: "Desafios",
+            title: "Challenge",
+            emoji: "🧺",
+            trigger: "cha"
+        }
     ];
 
+    console.log( setState , " sfdsafuhs")
 
     return (
 
@@ -35,60 +128,17 @@ function Matter () {
                     Tópicos
                 </h3>
                 <ul className={style.cmList}>
-
                 {
-                options.map((item) => {
-                    return (
-                        <Option emoji={item.emoji} href={item.trigger}  name={item.name} title={item.title} />
-                    )   
-                })
-            }
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
-                    <li className={style.cmItem}>
-                        <a className={style.cmAnchor} href="fsd" title="s">
-                            Sequencial
-                        </a>
-                    </li>
+                    options.map((item) => {
+                        return (
+                            <Option emoji={item.emoji} href={item.trigger} setState={setSetState} name={item.name} title={item.title} />
+                        )   
+                    })
+                }
                 </ul>
+            </div>
+            <div className={style.cmContent}>
+                <Subject />
             </div>
         </section>
     );

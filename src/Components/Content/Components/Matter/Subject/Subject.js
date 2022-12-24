@@ -1,5 +1,6 @@
+import React from "react";
 import Emoji from 'a11y-react-emoji';
-import style from "../../Content.module.scss";
+import style from "../../../Content.module.scss";
 
 function Subject () {
 

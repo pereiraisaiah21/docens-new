@@ -167,7 +167,10 @@
             height: 100%;
             color: #fff;
         }
-        &Emoji {}
+        &Emoji {
+            font-size: 2rem;
+            margin: -3px 8px 0 0;
+        }
     }
 
     // Subject

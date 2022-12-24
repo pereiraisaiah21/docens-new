@@ -5,7 +5,6 @@ import ActionsList from "./Components/ActionsList";
 import GuideLine from "./Components/Guideline";
 import Progress from "./Components/Progress/Progress";
 import Recommendation from "./Components/Recommendation/Recommendation";
-import Subject from "./Components/Subject/Subject";
 import Login from "../Login/Login";
 import Registration from "../Login/Registration";
 
@@ -41,7 +40,6 @@ function Content ({
             <section className={style.cSection} data-open="con">
                 {/* // Another section */}
                 <Matter />
-                <Subject />
             </section>
             <section className={style.cSection} data-open="">
                 <Login />
