@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import Header from "../Header/Header";
-import ActionsList from "../Content/Components/ActionsList";
-import GuideLine from "../Content/Components/Guideline";
+import ActionsList from "./Components/ActionsList";
+import GuideLine from "./Components/Guideline";
 import Progress from "./Components/Progress/Progress";
 import Recommendation from "./Components/Recommendation/Recommendation";
 import Subject from "./Components/Subject/Subject";
@@ -10,6 +11,7 @@ import Registration from "../Login/Registration";
 
 import style from "./Content.module.scss";
 import Quiz from "../Quiz/Quiz";
+import Matter from "./Components/Matter/Matter";
 
 function Content ({
     sectionOpen
@@ -38,6 +40,7 @@ function Content ({
             </section>
             <section className={style.cSection} data-open="con">
                 {/* // Another section */}
+                <Matter />
                 <Subject />
             </section>
             <section className={style.cSection} data-open="">
@@ -48,6 +51,13 @@ function Content ({
             </section>
         </section>
     );
+}
+
+Content.defaultProps = {
+    sectionOpen: null,
+}
+Content.propTypes = {
+    sectionOpen : PropTypes.func,
 }
 
 export default Content;

@@ -3,7 +3,7 @@
         padding: 16px 48px;
     }
     &Content {
-        background-color: #34303c;
+        background-color: #413e46;
         padding: 16px 16px 8px;
         border-radius: 20px;
     }
@@ -11,10 +11,12 @@
     &Header {}
     &Title {
         color: #fff;
+        font-size: 1.3rem;
     }
     &Description {
         color: #fff;
         padding: 16px 0 8px;
+        font-size: 1rem;
     }
     &Alternatives {
         padding: 0 0 8px;
@@ -27,6 +29,7 @@
             display: block;
             padding: 8px 0;
             color: #fff;
+            cursor: pointer;
         }
     }
     &Send {

@@ -11,6 +11,11 @@
         display: flex;
         flex-direction: column;
         position: relative;
+
+        height: calc(100vh - 32px);
+        margin: 16px;
+        border-radius: 20px;
+        background-color: #704abd;
     }
     &Content {
         grid-area: content;
@@ -44,6 +49,7 @@
                 font-size: .8rem;
                 color: #898989;
                 padding: 16px 0;
+                color: #fff;
             }
         }
         &Anchor {
@@ -52,6 +58,7 @@
             align-items: center;
             width: 100%;
             color: #898989;
+            color: #fff;
             border-radius: 10px;
         }
         &Name {}

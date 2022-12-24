@@ -1,6 +1,7 @@
+import React from "react";
+import Emoji from 'a11y-react-emoji';
 import style from "../Quiz.module.scss";
 import Alternatives from "./Alternatives";
-import Emoji from 'a11y-react-emoji';
 
 function Question () {
 
@@ -17,7 +18,7 @@ function Question () {
             </header>
             <Alternatives alternatives={[1,2,3]} />
             <button type="submit" className={style.qSend}>
-                Avançar  <Emoji className={style.qSendEmoji} symbol={"	➡	"} label="right-arrow" />
+                Avançar  <Emoji className={style.qSendEmoji} symbol="➡" label="right-arrow" />
             </button>
         </form>
     );
