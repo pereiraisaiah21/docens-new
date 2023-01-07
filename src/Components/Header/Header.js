@@ -11,10 +11,15 @@ function Header () {
                 Dashboard / Home
             </div>
             <div className={sytle.hUserDropdown}>
-                <span>
-                    <Emoji className={sytle.hEmoji} symbol={"👤"} label="user" />
-                </span> 
-                Capitain Kirk
+                <a className={sytle.hUserAnchor} href="fd" title="fds">
+                    <span>
+                        <Emoji className={sytle.hEmoji} symbol={"👤"} label="user" />
+                    </span> 
+                    Capitain Kirk
+                    <span>
+                        <Emoji className={sytle.hEmoji} symbol={"➕"} label="user" />
+                    </span>
+                </a>
             </div>
         </header>
     );

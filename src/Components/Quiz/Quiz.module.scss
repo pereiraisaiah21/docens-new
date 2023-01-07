@@ -3,12 +3,16 @@
         padding: 16px 48px;
     }
     &Content {
-        background-color: #413e46;
-        padding: 16px 16px 8px;
-        border-radius: 20px;
+        background-color: #594f6824;
+        padding: 0 0 8px;
+        // padding: 16px 16px 8px;
     }
     &Form {}
-    &Header {}
+    &Header {
+        border-left: 2px solid rgb(219, 36, 194);
+        background-color: rgb(255 255 255 / 19%);
+        padding: 8px 16px;
+    }
     &Title {
         color: #fff;
         font-size: 1.3rem;
@@ -19,24 +23,29 @@
         font-size: 1rem;
     }
     &Alternatives {
-        padding: 0 0 8px;
-    }
-    &Alternatives {
+        padding: 8px 16px;
         &Item {
+            border-bottom: 1px solid rgb(255 255 255 / 19%);
+
+            &:last-child {
+                border: none;
+            }
         }
         &Label {
             width: 100%;
             display: block;
-            padding: 8px 0;
+            padding: 16px 0;
             color: #fff;
             cursor: pointer;
         }
+    }
+    &Alternatives {
     }
     &Send {
         // width: 100%;
         background-color: unset;
         border: 0;
-        padding: 8px 0;
+        padding: 8px 16px;
         //text-align: right;
         color: #fff;
         cursor: pointer;
