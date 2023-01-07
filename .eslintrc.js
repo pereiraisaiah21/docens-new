@@ -5,8 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    // 'airbnb',
-    // 'prettier',
+    'airbnb',
+    'prettier',
   ],
   overrides: [
   ],
@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     'react',
-    // 'prettier',
+    'prettier',
   ],
   rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],

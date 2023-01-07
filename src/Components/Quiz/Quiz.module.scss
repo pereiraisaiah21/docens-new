@@ -5,7 +5,6 @@
     &Content {
         background-color: #594f6824;
         padding: 0 0 8px;
-        // padding: 16px 16px 8px;
     }
     &Form {}
     &Header {
@@ -42,15 +41,18 @@
     &Alternatives {
     }
     &Send {
-        // width: 100%;
         background-color: unset;
         border: 0;
         padding: 8px 16px;
-        //text-align: right;
         color: #fff;
         cursor: pointer;
         &Emoji {
             font-size: .9rem;
         }
+    }
+
+    // Initial
+    &Initial {
+        padding: 16px 48px;
     }
 }

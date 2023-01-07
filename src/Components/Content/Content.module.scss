@@ -29,7 +29,6 @@
             padding: 16px;
         }
         &Item {
-            // padding: 32px 16px;
             width: 24%;
 
             &:nth-child(1) {
@@ -38,15 +37,12 @@
 
             &:nth-child(2) {
                 border-bottom: 1px solid #2deb7cdb;
-                // background-color: #2deb7c79;
             }
             &:nth-child(3) {
                 border-bottom: 1px solid #532debdb;
-                // background-color: #532deb79;
             }
             &:nth-child(4) {
                 border-bottom: 1px solid #eb2d9fdb;
-                // background-color: #eb2d9f79;
             }
         }
         &Anchor {
@@ -55,7 +51,6 @@
             padding: 8px;
             height: 100%;
             width: 100%;
-            
         }
         &Emoji {
             padding: 10px;
@@ -158,6 +153,7 @@
         }
         &Title {
             color: #fff;
+            font-size: 1.3rem;
             margin: 16px 0;
             border-left: 2px solid rgb(36, 219, 79);
             background-color: rgb(255 255 255 / 19%);
@@ -203,14 +199,16 @@
 
     // Subject
     &s {
-        &Wrapper {
-            padding: 16px 48px;
-        }
+        &Wrapper {}
         &Title {
-            margin: 16px 0;
+            border-left: 2px solid rgb(219, 36, 194);
+            background-color: rgb(255 255 255 / 19%);
+            padding: 8px 16px;
+            font-size: 1.3rem;
         }
         &Author {
             color: #fff;
+            padding: 16px 8px;
         }
         &Emoji {}
         &Content {
@@ -219,6 +217,7 @@
         &Description {
             color: #fff;
             margin: 16px 0;
+            padding: 8px 16px;
         }
     }
 }

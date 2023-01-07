@@ -16,7 +16,6 @@ function Alternatives ({
                 alternatives.map((item,key) => {
                     return (
 
-                        // <li className={`Question__alternatives__option ${selected === item ? "selected" : ""}`} key={key}>
                         <li className={style.qAlternativesItem} key={key}>
                             <label className={style.qAlternativesLabel} htmlFor={`a${key}`}>
                                 <input

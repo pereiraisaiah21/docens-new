@@ -122,6 +122,7 @@ function Matter () {
 
     return (
 
+        <>
         <section className={style.cmWrapper}>
             <div className={style.cmContent}>
                 <h3 className={style.cmTitle}>
@@ -137,6 +138,8 @@ function Matter () {
                 }
                 </ul>
             </div>
+        </section>
+        <section className={style.cmWrapper}>
             <div className={style.cmContent}>
                 {
                     options
@@ -147,6 +150,7 @@ function Matter () {
                 }
             </div>
         </section>
+        </>
     );
 }
 
