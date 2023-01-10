@@ -22,10 +22,13 @@
         font-size: 1rem;
     }
     &Alternatives {
-        padding: 8px 16px;
         &Item {
+            padding: 8px 16px;
             border-bottom: 1px solid rgb(255 255 255 / 19%);
-
+            
+            &:hover {
+                background-color: #5c585830;
+            }
             &:last-child {
                 border: none;
             }
@@ -38,8 +41,7 @@
             cursor: pointer;
         }
     }
-    &Alternatives {
-    }
+    &Alternatives {}
     &Send {
         background-color: unset;
         border: 0;
@@ -48,6 +50,18 @@
         cursor: pointer;
         &Emoji {
             font-size: .9rem;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: rgb(217, 29, 29);
+            transition: width .3s;
+        }
+        &:hover::after {
+            width: 100%;
         }
     }
 

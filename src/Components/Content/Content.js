@@ -11,6 +11,7 @@ import Registration from "../Login/Registration";
 import style from "./Content.module.scss";
 import Quiz from "../Quiz/Quiz";
 import Matter from "./Components/Matter/Matter";
+import Profile from "../Profile/Profile";
 
 function Content ({
     sectionOpen
@@ -48,6 +49,9 @@ function Content ({
             </section>
             <section className={style.cSection} data-open="qui">
                 <Quiz />
+            </section>
+            <section className={style.cSection} data-open="pro">
+                <Profile />
             </section>
         </section>
     );

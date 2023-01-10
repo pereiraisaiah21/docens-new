@@ -130,9 +130,9 @@ function Matter () {
                 </h3>
                 <ul className={style.cmList}>
                 {
-                    options.map((item) => {
+                    options.map((item, key) => {
                         return (
-                            <Option emoji={item.emoji} href={item.trigger} setState={setSetState} name={item.name} title={item.title} />
+                            <Option emoji={item.emoji} href={item.trigger} setState={setSetState} name={item.name} title={item.title} key={key} />
                         )   
                     })
                 }

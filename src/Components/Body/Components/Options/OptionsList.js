@@ -31,6 +31,12 @@ function OptionsList ({
             emoji: "🤖",
             trigger: "qui"
         },
+        {
+            name: "Perfil",
+            title: "Perfil",
+            emoji: "😸",
+            trigger: "pro"
+        },
     ];
 
     return (
