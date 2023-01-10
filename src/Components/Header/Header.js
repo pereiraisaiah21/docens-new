@@ -1,25 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Emoji from 'a11y-react-emoji';
-import sytle from "./Header.module.scss";
+import style from "./Header.module.scss";
 
 function Header () {
+
+    const [ subMenuOpen, setSubMenuOpen ] = useState( false );
+
+    const handleUserOptions = function () {
+        setSubMenuOpen( !subMenuOpen );
+    };
     
     return (
 
-        <header className={sytle.hWrapper}>
-            <div className={sytle.hBreadcrumb}>
+        <header className={style.hWrapper}>
+            <div className={style.hBreadcrumb}>
                 Dashboard / Home
             </div>
-            <div className={sytle.hUserDropdown}>
-                <a className={sytle.hUserAnchor} href="fd" title="fds">
+            <div className={style.hUserDropdown}>
+                <button className={style.hUserAnchor} type="button" onClick={handleUserOptions}>
                     <span>
-                        <Emoji className={sytle.hEmoji} symbol={"👤"} label="user" />
+                        <Emoji className={style.hEmoji} symbol={"👤"} label="user" />
                     </span> 
                     Capitain Kirk
                     <span>
-                        <Emoji className={sytle.hEmoji} symbol={"➕"} label="user" />
+                        <Emoji className={style.hEmoji} symbol={"➕"} label="user" />
                     </span>
-                </a>
+                </button>
+                <ul className={style.hUserDropdownOpen} style={{display : subMenuOpen ? "block" : "none"}}>
+                    <li className={style.hUserDropdownSubitem}>
+                        Meus dados
+                    </li>
+                    <li className={style.hUserDropdownSubitem}>
+                        Minhas conquistas
+                    </li>
+                </ul>
             </div>
         </header>
     );

@@ -2,6 +2,7 @@ import style from "../../Body.module.scss";
 import Option from "../Options/Option";
 
 function Tools ({
+    isMenuReduced,
     setState
 }) {
 
@@ -9,7 +10,7 @@ function Tools ({
 
         <ul className={style.btList}>
             <li className={style.btSpacer}></li>
-            <Option emoji="⚙" href="afsad" name="Configurações" title="" setState={setState}/>
+            <Option emoji="⚙" href="afsad" name={!isMenuReduced ? "Configurações" : null} title="" setState={setState}/>
         </ul>
     );
 }

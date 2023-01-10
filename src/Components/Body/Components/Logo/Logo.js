@@ -1,11 +1,13 @@
 import style from "../../Body.module.scss";
 
-function Logo () {
+function Logo ({
+    isMenuReduced
+}) {
 
     return (
 
         <figure className={style.blLogo}>
-            <img alt="" src="/logo.png" className={style.blImage} />
+            <img alt="" src={!isMenuReduced ? "/logo.png" : "/LogoReduced.png"} className={style.blImage} />
             <figcaption className={style.blLabel} />
         </figure>
     );

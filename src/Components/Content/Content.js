@@ -31,7 +31,6 @@ function Content ({
         <section>
             <Header />
             <section className={style.cSection} data-open="das">
-                <Quiz />
                 <ActionsList />
                 <GuideLine />
                 <Progress />
@@ -46,6 +45,9 @@ function Content ({
             </section>
             <section className={style.cSection} data-open="">
                 <Registration />
+            </section>
+            <section className={style.cSection} data-open="qui">
+                <Quiz />
             </section>
         </section>
     );

@@ -2,6 +2,7 @@ import style from "../../Body.module.scss";
 import Option from "./Option";
 
 function OptionsList ({
+    isMenuReduced,
     setState
 }) {
 
@@ -24,18 +25,30 @@ function OptionsList ({
             emoji: "🧺",
             trigger: "cha"
         },
+        {
+            name: "Quiz",
+            title: "Quiz",
+            emoji: "🤖",
+            trigger: "qui"
+        },
     ];
 
     return (
         
         <ul className={style.boList}>
             <li className={style.boItemDescription}>
-                Ferramentas
+                {
+                    !isMenuReduced
+                    ?
+                    "Ferramentas"
+                    :
+                    null
+                }
             </li>
             {
                 options.map((item, key) => {
                     return (
-                        <Option emoji={item.emoji} href={item.trigger} key={key} name={item.name} title={item.title} setState={setState} />
+                        <Option emoji={item.emoji} href={item.trigger} key={key} name={!isMenuReduced ? item.name : null} title={item.title} setState={setState} />
                     )   
                 })
             }

@@ -20,10 +20,10 @@ function Option ({
 
         <li className={style.cmItem}>
             <a className={style.cmAnchor} href={`${href}`} title={title} onClick={handleOptionClick}>
-                <Emoji className={style.cmEmoji} symbol={emoji} label={title} />
                 <span className={style.cmName}>
                     {name}
                 </span>
+                <Emoji className={style.cmEmoji} symbol={emoji} label={title} />
             </a>
         </li>
     );

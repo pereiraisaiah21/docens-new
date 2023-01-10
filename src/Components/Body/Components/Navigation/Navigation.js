@@ -6,18 +6,20 @@ import style from "../../Body.module.scss";
 import CloseButton from "../../../Button/CloseButton";
 
 function Navigation ({
+    isReducedMenu,
+    setMenuReduced,
     setState
 }) {
  
     return (
 
         <nav className={style.bNavigation}>
-            <CloseButton />
-            <Logo />
-            <OptionsList setState={setState} />
-            <Tools setState={setState} />
+            <CloseButton setState={setMenuReduced} isMenuReduced={isReducedMenu} />
+            <Logo isMenuReduced={isReducedMenu} />
+            <OptionsList setState={setState} isMenuReduced={isReducedMenu}  />
+            <Tools setState={setState} isMenuReduced={isReducedMenu} />
         </nav>
-    )
+    );
 }
 
 export default Navigation;

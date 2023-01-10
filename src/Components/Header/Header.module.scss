@@ -14,13 +14,33 @@
     }
     &UserDropdown {
         width: 30%;
+        position: relative;
+        &Open {
+            background-color: red;
+            background-color: #5c585830;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            top: 100%;
+            position: absolute;
+            padding: 12px 0 0;
+            transition: all 3s;
+        }
+        &Subitem {
+            height: 32px;
+            font-size: .8rem;
+            cursor: pointer;
+        }
     }
     &UserAnchor {
         display: flex;
+        width: 100%;
+        border: none;
         justify-content: space-around;
         color: #fff;
         padding: 8px 8px 10px;
         background-color: #5c585830;
+        cursor: pointer;
     }
     &Emoji {
         border-radius: 10px;
